@@ -1,0 +1,118 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+	
+   Helpful links: 
+   	Web colors: 
+   		https://en.wikipedia.org/wiki/Web_colors#X11_color_names
+	Color picker tool:
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
+		http://colorpicker.com
+
+*/
+
+body {
+   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+
+.header{
+   width:100%;
+    height:8vh;
+   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.54);
+  
+}
+
+.header img{
+   width:15%;
+   margin-top: 1.5vh;
+   margin-left: 5vw;
+  
+}
+
+.intro h4,h2,h2 {
+   margin-left: 5vw;
+   margin-bottom: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    background-color: #eeeeee;
+
+}
+
+#gallery {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   background-color:white;
+}
+
+.issues {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   width: 70%;
+    text-align:center;
+    margin-left: 15vw;
+
+   
+}
+
+
+#container .issue-button {
+    width: auto;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 1.2em;
+    border: 1px solid black;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 0.9em;
+    background-color: white;
+    color:black;
+      
+}
+
+
+.candidate {
+   height:auto;
+   padding:5%;
+
+}
+
+.candidate img {
+   border: 4px solid gray;
+   
+}
+
+
+.box {
+   display:none;
+   width: auto;
+   height: auto;
+   margin-right: 6%;
+   box-shadow: 0 0 8px rgba(0,0,0,0.7);
+   border: 1px solid gold;
+}
+
+
+
+ li {
+    width: 80%;
+   border-bottom: 1px solid #dddddd;
+   padding: 4%;
+   list-style-type: none;
+}
+
+.candidates {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
+    height: auto;
+  }
+
+ 

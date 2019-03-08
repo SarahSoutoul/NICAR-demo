@@ -1,0 +1,286 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+	
+   Helpful links: 
+   	Web colors: 
+   		https://en.wikipedia.org/wiki/Web_colors#X11_color_names
+	Color picker tool:
+		https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool
+		http://colorpicker.com
+
+*/
+
+body {
+   font-family: "Quicksand", sans-serif;
+   
+}
+
+p, h3{
+   font-family: "Quicksand", sans-serif;
+}
+
+.header{
+   width:100%;
+    height:8vh;
+   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.54);
+  
+}
+
+.header img{
+   width:15%;
+   margin-top: 1.5vh;
+   margin-left: 5vw;
+  
+}
+
+.intro {
+    
+    background-image: linear-gradient(to bottom right, #db5353, #7c1a1a );
+}
+
+.intro h4,h2,h2 {
+   margin-left: 5vw;
+   margin-bottom: 0;
+   color:white;
+}
+
+.title {
+
+   color:gold;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height:auto;
+
+}
+
+#gallery {
+  display:grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+  /*overflow: hidden;*/
+   background-color:white;
+   height:auto;
+   margin-left:3%;
+ 
+}
+
+
+.issues {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   width: 80%;
+   text-align: center;
+   margin-left: 9vw;
+   
+}
+
+
+.issue-button {
+    width: auto;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.7em;
+    border-radius: 1.2em;
+    border: 1px solid gray;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+    margin: 0.9em;
+    background-color:white;
+    color:gray;
+      
+}
+
+.activebutton {
+   background-color:silver;
+   color:white;
+}
+
+.reset-button {
+   width: auto;
+   font-size: 1em;
+   font-weight: bold;
+   padding: 0.7em;
+   border-radius: 1.2em;
+   border: 1px solid gray;
+   -webkit-transition: 0.2s;
+   transition: 0.2s;
+   cursor: pointer;
+   margin: 0.9em;
+   background-color:silver;
+   color:white;
+     
+}
+
+
+.candidate {
+    /*float: left;*/
+    /*width: 21%;*/
+    width: 80%;
+    height: auto;
+    margin-left: 3%;
+    margin-top: 10%;
+
+}
+
+.candidate img {
+   width: 100%;
+   border: 4px solid gray;
+  
+   
+}
+
+
+/*.box {
+   display:none;
+   width: 102%;
+   left: 0px;
+   top: 0px;
+   /*min-height: 462px;*/
+   /*margin-top:5%;
+   margin-bottom:5%;
+   box-shadow: 0 0 8px rgba(0,0,0,0.7);
+}*/
+
+.box{
+   display:none;
+   padding: 2em;
+   position: relative;
+   width:80%;
+}
+.box:after,
+.box:before {
+   border: .5em solid #BB2727; 
+   bottom: 0;    
+   content: '';
+   position: absolute;
+   top: 0;
+   width: 10%;
+}
+.box:after {
+   border-left: none;
+   right: 0;
+}
+.box:before {
+   border-right: none;
+   left: 0;
+}
+
+
+li {
+
+   /*border-bottom: 1px solid #dddddd;*/
+   padding: 4%;
+   list-style-type: none;
+}
+
+
+footer{
+   width: 100%;
+   height: auto;
+   border-top: 1px solid grey;
+   box-shadow: 0 0 8px #333;
+   background-color: #BB2727;
+   padding-bottom: 15px;
+   padding-bottom: 15px;
+   margin-top: 3%;
+   background-image: linear-gradient(to bottom right, #db5353, #7c1a1a );
+   color:white;
+ }
+ 
+ footer p{
+   text-align: center;
+   font-size: 1.0em;
+   line-height: 1.1em;
+   z-index: 999;
+   display: block;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   font-weight: bold;
+ }
+
+
+.explanation {
+   color:white;
+   border-top: 1px solid darkgray;
+   padding-top: 2em;
+   padding-bottom: 2em;
+   width: 90vw;
+   margin-left: 5vw;
+   margin-right: 5vw;
+   margin-top: 2em;
+}
+
+.explanation a {
+   color: white;
+   font-weight:bold;
+   text-decoration:none;
+   
+}
+
+.explanation a:hover {
+   color: gold;
+}
+.explanation h3 {
+   margin-left: 5vw;
+   margin-bottom: 0;
+   font-weight: bold;
+   color: gold;
+}
+
+.explanation p {
+   margin-left: 5vw;
+   margin-right: 5vw;
+}
+
+@media only screen and (max-width: 600px) {
+  
+   .header img{
+      width:40%;
+
+     
+   }
+
+   .intro h4{
+      font-size: 0.8em;
+   }
+
+   .intro h2 {
+      font-size: 0.9em;
+   }
+
+   .issues {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 40%;
+      text-align: center;
+      margin-left: 5vw;
+      
+      
+   }
+
+
+   #gallery {
+      display:grid;
+      grid-template-columns: 1fr;
+      margin-bottom:5vw;
+   }
+
+
+   .candidate {
+   margin-left:15%;
+   height:auto;
+   width: 60%;
+
+   }
+
+  
+  
+}
